@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor SVG</title>
+    <link rel="stylesheet" type="text/css" href="6_1093_ENACHE_RARES.css" />
+    <script type="text/javascript" src="6_1093_ENACHE_RARES.js"></script>
+</head>
+<body>
+    <h1>Editor SVG</h1>
+
+    <input type="button" id="btnDreptunghi" value="Dreptunghi"/>
+    <input type="button" id="btnElipsa" value="Elipsa"/>
+    <input type="button" id="btnLinie" value="Linie"/>
+
+    <label for="culoareLinie">Culoare linie:</label>
+    <input type="color" id="culoareLinie" value="#000000"/>
+    
+    <label for="grosimeLinie">Grosime linie:</label>
+    <input type="range" id="grosimeLinie" min="1" max="10" value="2"/>
+    <span id="grosimeValoare">2</span>
+
+    <label for="culoareFundal">Culoare fundal:</label>
+    <input type="color" id="culoareFundal" value="#000000"/>
+
+    <input type="button" id="btnStergere" value="Sterge"/>
+    <input type="button" id="btnUndo" value="Undo"/>
+    <input type="button" id="btnSalvareSVG" value="Salvare SVG"/>
+
+    <svg id="editor">
+        <g id="desen"></g>
+        <rect id="drept1" x="10" y="10" width="80" height="50"></rect>
+        <rect id="drept2" x="30" y="30" width="80" height="50"></rect>
+        <rect id="selectie" x="130" y="130" width="60" height="60"></rect>
+        <ellipse id="elipsa1" cx="170" cy="35" rx="40" ry="25"></ellipse>
+        <ellipse id="elipsa2" cx="190" cy="55" rx="40" ry="25"></ellipse>
+        <ellipse id="selectieElipsa" cx="0" cy="0" rx="0" ry="0" style="display: none;"></ellipse>
+        <line id="linia1" x1="250" y1="10" x2="340" y2="10"></line>
+        <line id="linia2" x1="270" y1="30" x2="360" y2="30"></line>
+        <line id="selectieLinie" x1="0" y1="0" x2="0" y2="0" style="display: none;"></line>
+        <text id="pozitie" x="10" y="100" style="user-select: none;"></text>
+    </svg>
+</body>
+</html>

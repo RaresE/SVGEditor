@@ -1,0 +1,67 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1{
+    width: 100%;
+    background-color: #3C5759; 
+    font-style: italic;
+    color: #EFE9E1;
+    margin: 0px;
+    padding: 8px;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eaeaea;
+    cursor: crosshair;
+}
+
+svg #selectie, svg #selectieElipsa, svg #selectieLinie{
+    fill:transparent;
+    stroke: green;
+    stroke-width: 3;
+    stroke-dasharray: 5,3;
+    display: none;
+}
+
+#btnDreptunghi:hover, #btnElipsa:hover, #btnLinie:hover, #btnStergere:hover, #btnUndo:hover, #btnSalvareSVG:hover {
+    background-color: #3CB043;  
+    transform: scale(1.05);  
+}
+
+#btnDreptunghi, #btnElipsa, #btnLinie, #btnStergere, #btnUndo, #btnSalvareSVG {
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    border-color: #3C5759;
+}
+
+
+.selectat {
+    fill: red;
+    stroke: darkred;
+    stroke-dasharray: 5,3;
+}   
+
+#linia1, #linia2, #drept1, #drept2, #elipsa1, #elipsa2{
+    fill: grey;
+    fill-opacity: 0.2;
+    stroke: #023020;
+    stroke-opacity: 0.8;
+}
+
+button, input{
+    cursor: pointer;
+}
