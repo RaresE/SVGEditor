@@ -1,6 +1,6 @@
 # SVG Editor
 
-A lightweight web-based SVG editor for creating and customizing basic vector shapes like rectangles, ellipses, and lines. Built with pure HTML, CSS, and JavaScript—no frameworks required.
+A lightweight web-based SVG editor for creating and customizing basic vector shapes like rectangles, ellipses, and lines. Built with pure HTML, CSS, and JavaScript.
 
 ## Features
 
